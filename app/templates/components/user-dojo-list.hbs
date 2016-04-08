@@ -1,6 +1,6 @@
 <h2>The dojos:</h2>
 
 {{#each dojo as |dojo|}}
-  <h2>{{#link-to 'dojo' dojo.id}} {{dojo.name}} {{/link-to}}
+  <h2>{{dojo-popularity dojo}}{{#link-to 'dojo' dojo.id}} {{dojo.name}} {{/link-to}}
   <button class="btn btn-warning" {{action 'addToFavorites' dojo}}><span class="glyphicon glyphicon-star"></span></button></h2>
 {{/each}}
