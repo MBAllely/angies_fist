@@ -1,0 +1,37 @@
+{{#if updateShowing}}
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name }}
+    </div>
+
+    <div class="form-group">
+      <label for="street">Street</label>
+      {{input value=street }}
+    </div>
+
+    <div class="form-group">
+      <label for="state">State</label>
+      {{input value=dojo.state }}
+    </div>
+
+    <div class="form-group">
+      <label for="zip">Zip</label>
+      {{input value=dojo.zip }}
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      {{input value=dojo.phone }}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=dojo.image }}
+    </div>
+
+    <button {{action 'updateDojo'}}>Update</button>
+    <button {{action 'toggleUpdateForm'}}>Cancel</button>
+
+  </form>
+{{/if}}

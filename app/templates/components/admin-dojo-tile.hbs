@@ -10,10 +10,14 @@
         <h5>{{dojo.street}}</h5>
         <h5>{{dojo.state}}</h5>
         <h5>{{dojo.zip}}</h5>
+
+        <button class="btn btn-primary" {{action 'toggleUpdateForm'}}>Update</button>
+        <button class="btn btn-danger" >Delete</button>
       </div>
       <div class="col-sm-5">
         <img src="{{dojo.image}}" alt="{{dojo.name}}" />
       </div>
     </div>
+    {{update-dojo updateDojo='updateDojo' dojo=dojo updateShowing=updateShowing }}
   </div>
 </div>

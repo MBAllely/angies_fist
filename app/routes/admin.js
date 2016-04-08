@@ -9,6 +9,12 @@ export default Ember.Route.extend({
       var newDojo = this.store.createRecord('dojo', params);
       newDojo.save();
       this.transitionTo('admin');
+    },
+    updateDojo(dojo, params) {
+      Object.keys(params).forEach(function(key) {
+        dojo.set(key, params[key]);
+      });
+      dojo.save();
     }
   }
 });
