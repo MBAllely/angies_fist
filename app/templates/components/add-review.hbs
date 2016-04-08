@@ -1,0 +1,23 @@
+{{#if addReview}}
+  <form>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author}}
+    </div>
+
+    <div class="form-group">
+      <label for="body">Body</label>
+      {{textarea rows='5' value=body}}
+    </div>
+
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      {{input value=rating type='number'}}
+    </div>
+
+    <button {{action 'saveReview'}}>Review!</button>
+
+  </form>
+{{else}}
+  <button class="btn btn-primary" {{action 'addReviewShow'}}>Review this Dojo</button>
+{{/if}}
