@@ -31,10 +31,13 @@
         {{input value=image}}
       </div>
 
+      <button {{action 'addDojo'}}>Add</button>
+      <button {{action 'toggleForm'}}>Cancel</button>
+
     </form>
   </div>
 {{else}}
 
-  
+  <button {{action 'toggleForm'}}>Add New Dojo</button>
 
 {{/if}}
