@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   addReview: false,
   actions: {
     addReviewShow() {
-      this.set('addReview', true);
+      this.toggleProperty('addReview');
     },
     saveReview() {
       var params = {

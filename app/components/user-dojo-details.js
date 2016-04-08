@@ -5,7 +5,15 @@ export default Ember.Component.extend({
     return this.get('dojo.street') + " " + this.get('dojo.state') + "\n " + this.get('dojo.zip');
   }),
 
-  
+  averageRating: Ember.computed('reviews', function() {
+    var total = 0;
+    console.log(this.get('dojo.reviews.length'));
+    this.get('dojo.reviews').forEach(function(review) {
+      total += parseInt(review.rating);
+    });
+    var averageRating = (total / parseInt(this.get('dojo.reviews.length')));
+    return averageRating;
+  }),
 
   favorites: Ember.inject.service(),
 

@@ -15,7 +15,8 @@
       {{input value=rating type='number'}}
     </div>
 
-    <button {{action 'saveReview'}}>Review!</button>
+    <button class="btn btn-success" {{action 'saveReview'}}>Review!</button>
+    <button class="btn btn-danger" {{action 'addReviewShow'}}>Cancel</button>
 
   </form>
 {{else}}
