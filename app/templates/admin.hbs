@@ -1,7 +1,7 @@
 <h1>This is the admin page</h1>
 
-{{add-dojo addDojo="addDojo"}}
+{{add-dojo dojo=dojo dojos=model addDojo="addDojo" updateDojo="updateDojo"}}
 
-{{admin-dojo-list dojos=model}}
+{{admin-dojo-list dojo=dojo updateDojo="updateDojo" dojos=model}}
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/LJSZ1TwjcsQ" frameborder="0" allowfullscreen></iframe>
