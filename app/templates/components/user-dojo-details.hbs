@@ -10,10 +10,14 @@
         <h5>{{dojo.street}}</h5>
         <h5>{{dojo.state}}</h5>
         <h5>{{dojo.zip}}</h5>
+
+        <button {{action 'addToFavorites' dojo}}><span class="glyphicon glyphicon-star"></span></button>
+
       </div>
       <div class="col-sm-5">
         <img src="{{dojo.image}}" alt="{{dojo.name}}" />
       </div>
+
     </div>
   </div>
 </div>
