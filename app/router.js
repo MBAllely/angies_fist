@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('admin');
+  this.route('dojo', { path: '/dojo/:dojo_id'});
 });
 
 export default Router;
