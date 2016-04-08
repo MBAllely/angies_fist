@@ -1,1 +1,5 @@
-{{yield}}
+<h1>Dojos:</h1>
+
+{{#each dojos as |dojo|}}
+  {{dojo-tile dojo=dojo}}
+{{/each}}
