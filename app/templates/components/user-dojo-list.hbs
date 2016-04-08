@@ -1,5 +1,5 @@
 <h2>The dojos:</h2>
 
 {{#each dojo as |dojo|}}
-  {{user-dojo-tile dojo=dojo}}
+  <h2>{{#link-to 'dojo' dojo.id}} {{dojo.name}} {{/link-to}}</h2>
 {{/each}}
