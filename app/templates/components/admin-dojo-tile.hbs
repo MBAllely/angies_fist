@@ -12,7 +12,7 @@
         <h5>{{dojo.zip}}</h5>
 
         <button class="btn btn-primary" {{action 'toggleUpdateForm'}}>Update</button>
-        <button class="btn btn-danger" >Delete</button>
+        <button class="btn btn-danger" {{action 'deleteDojo' dojo}}><span class="glyphicon glyphicon-trash"></button>
       </div>
       <div class="col-sm-5">
         <img src="{{dojo.image}}" alt="{{dojo.name}}" />

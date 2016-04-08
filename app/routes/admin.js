@@ -15,6 +15,11 @@ export default Ember.Route.extend({
         dojo.set(key, params[key]);
       });
       dojo.save();
+    },
+    deleteDojo(dojo) {
+      if(confirm('Are you sure you want to delete this dojo?')) {
+        dojo.destroyRecord();
+      }
     }
   }
 });

@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     },
     updateDojo(dojo, params) {
       this.sendAction('updateDojo', dojo, params);
+    },
+    deleteDojo(dojo) {
+      this.sendAction('deleteDojo', dojo);
     }
   }
 });
