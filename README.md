@@ -8,11 +8,12 @@ A basic review web app.
 
 _This web app is designed to mimic websites like yelp.  Admins can add, edit, and delete dojos.  Users can add reviews and rate the dojos._
 
-_The goal of this project is to illustrate an understanding of Ember.js_
+_The goal of this project is to illustrate an understanding of computed properties, custom helpers, and services in  Ember.js_
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
+
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -48,7 +49,15 @@ _If you have any questions, concerns, or feedback, please contact the authors th
 * Bower
 * Bootstrap
 
+###Further Development
+
+* Granting users the ability to edit and delete their reviews
+* Fixing that stupid computed average rating NaN mess
+* Adding Google Maps to pages with the locations of the dojos
+* Adding price, description, and hours properties to the dojo model
+* Adding a custom helper to star the most positively reviewed dojos on the index
+
 #### License
 Licensed under the MIT license.
 
-Copyright (c) 2016 **Marika Allely  (Holy Ghostest with the Mostest)**
+Copyright (c) 2016 **Marika Allely  (Holy Ghostess with the Mostest)**
