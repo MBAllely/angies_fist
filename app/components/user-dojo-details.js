@@ -7,8 +7,8 @@ export default Ember.Component.extend({
 
   averageRating: Ember.computed('reviews', function() {
     var total = 0;
-    console.log(this.get('dojo.reviews.length'));
     this.get('dojo.reviews').forEach(function(review) {
+      console.log(total);
       total += parseInt(review.rating);
     });
     var averageRating = (total / parseInt(this.get('dojo.reviews.length')));
