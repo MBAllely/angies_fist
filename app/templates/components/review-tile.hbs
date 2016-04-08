@@ -1,0 +1,14 @@
+<div class="review">
+  {{#each dojo.reviews as |review|}}
+    <div class="dojo panel panel-default">
+      <div class="panel-heading">
+        <h3>{{review.author}}, {{review.rating}}/5</h3>
+      </div>
+      <div class="panel-body">
+        <p><em>{{review.date}}</em></p>
+        <p>{{review.body}}</p>
+
+      </div>
+    </div>
+  {{/each}}
+</div>
