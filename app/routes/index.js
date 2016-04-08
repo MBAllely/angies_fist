@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('dojo');
+  model(params) {
+    return Ember.RSVP.hash({
+      dojos: this.store.findAll('dojo'),
+      reviews: this.store.findAll('review')
+    });
   }
 });
