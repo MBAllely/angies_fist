@@ -2,7 +2,8 @@
 
 A basic review web app.  
 
-## By Marika Allely (MY WILL BE DONE)
+## By Marika Allely
+![angies_fist2](https://cloud.githubusercontent.com/assets/13214521/19405714/c5f846ec-922f-11e6-92ca-9a39789ffef6.png)
 
 ## Description
 
